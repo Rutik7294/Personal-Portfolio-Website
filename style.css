@@ -530,7 +530,7 @@ input[type=text]{
   border-radius: 4px;
   box-sizing: border-box;
   margin-bottom: 5px;
-  resize: vertical;
+  resize: vertical; 
 }
 
 input[type=email], select, textarea{
