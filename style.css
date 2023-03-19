@@ -95,7 +95,7 @@ html{
     display:flex;
     background:black;
     
-    height: 100vh;
+    height: 800px;
     color:#fff;
     min-height: 500px;
     font-family: sans-serif;
@@ -263,6 +263,7 @@ section .title::after{
 .education {
     color: #fff;
     background: #111;
+    
 }
 
 .education .title::before{
