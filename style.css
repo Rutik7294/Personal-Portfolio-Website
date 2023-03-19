@@ -564,7 +564,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color:#111;
     padding: 20px;
-    width: 600px;
+    width: 500px;
     
   }
 
@@ -711,7 +711,7 @@ footer span a:hover{
 }
 
 
-@media(max-width:690px){
+@media(max-width:480px){
     .max-width{
         padding: 0 23px;
     }
