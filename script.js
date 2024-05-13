@@ -17,14 +17,14 @@ $(document).ready(function(){
     //typing animation
 
     var typed = new Typed(".typing",{
-        strings:["Python Developer","Web Designer","Data Science Enthusiast"],
+        strings:["Python Developer","Data Science Enthusiast"],
         typeSpeed:100,
         backSpeed:60,
         loop :true
     })
 
     var typed = new Typed(".typing-2",{
-        strings:["Python Developer","Web Designer","Data Science Enthusiast"],
+        strings:["Python Developer","Data Science Enthusiast"],
         typeSpeed:100,
         backSpeed:60,
         loop :true
