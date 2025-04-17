@@ -17,76 +17,74 @@ html{
 }
 
 
-/* navbar styling */
-
-
-.navbar{
-    position:fixed;
-    width:100%;
-    padding: 30px 0;
-    /*background: crimson;*/
-    font-family: sans-serif;
-    transition: all 0.3s ease;
-    z-index: 999;
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
 }
 
-.navbar.sticky{
-    padding:15px 0;
-    background:orangered;
-}
-
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
 }
 
-.navbar .logo a{
-    color:#fff;
-    font-size: 35px;
-    font-weight: 600;   
+.navbar .menu {
+    display: flex;
+    gap: 20px;
 }
 
-.navbar .logo a span{
-    color:orangered;
+.navbar .menu li {
+    list-style-type: none;
 }
 
-.navbar.sticky .logo a span{
-    color:#fff;
+.navbar .menu li a {
+    color: white;
+    text-decoration: none;
 }
 
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-
-.navbar .menu li a{
-    color:#fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-
-.navbar .menu li a:hover{
-    color:orangered;
-}
-
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
-
-
-/*menu btn styling*/
-
-
-.menu-btn{
-    color: #fff;
-    font-size: 23px;
+.menu-btn {
+    display: none;
     cursor: pointer;
-    display:none;
 }
 
+.menu-btn i {
+    color: white;
+    font-size: 28px;
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar .menu.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn.active i {
+        transform: rotate(90deg);
+    }
+
+    .navbar .menu li a {
+        font-size: 18px;
+        color: #fff;
+    }
+}
 
 /* home section styling */
 
