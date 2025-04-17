@@ -202,6 +202,7 @@
     </footer>
     
     <script>
+        // Typed.js initialization
         new Typed(".typing", {
             strings: ["Python Developer", "Web Developer", "Software Engineer"],
             typeSpeed: 100,
@@ -210,8 +211,17 @@
             loop: true
         });
 
+        // Mobile menu toggle functionality
         $(".menu-btn").click(function() {
             $(".menu").toggleClass("active");
+        });
+
+        // Adjust the navbar toggle for mobile
+        $(document).ready(function() {
+            $(".menu-btn").click(function() {
+                $(this).toggleClass("active");
+                $(".menu").toggleClass("active");
+            });
         });
     </script>
 </body>
